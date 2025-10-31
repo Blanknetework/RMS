@@ -1,0 +1,102 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container">
+    <header class="header">
+        <img src="imgs/LOGO (1).png" alt="Barangay Seal" class="logo-seal">
+        <div class="header-text">
+            <div class="barangay-name">San Bartolome Barangay Hall</div>
+            <div class="risk-management">Risk Management</div>
+        </div>
+    </header>
+
+    <div class="main-content">
+        <nav class="sidebar">
+            <ul>
+                <li><a href="#" class="nav-item">Dashboard</a></li>
+                <li><a href="#" class="nav-item">Risk Mapping</a></li>
+                <li><a href="#" class="nav-item">Missing Report</a></li>
+                <li><a href="#" class="nav-item active">Evacuees</a></li>
+            </ul>
+        </nav>
+
+        <div class="report-section">
+            <h2>Evacuees Inventory</h2>
+
+            <div class="search-container">
+                <input type="text" placeholder="Search" class="search-input">
+                <button class="search-button"><i class="fas fa-search"></i></button>
+            </div>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Family ID</th>
+                            <th>Head of Family</th>
+                            <th>Seniors</th>
+                            <th>PWD</th>
+                            <th>Children</th>
+                            <th>Total Members</th>
+                            <th>Evacuation Center Assigned</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Maria Santos</td>
+                            <td>2</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>5</td>
+                            <td>Evacuation Center 1</td>
+                            <td class="action-buttons">
+                                <button class="action-btn view-btn">View</button>
+                                <button class="action-btn update-btn">Update</button>
+                                <button class="action-btn delete-btn">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Lance Adam</td>
+                            <td>1</td>
+                            <td>3</td>
+                            <td>1</td>
+                            <td>5</td>
+                            <td>Evacuation Center 2</td>
+                            <td class="action-buttons">
+                                <button class="action-btn view-btn">View</button>
+                                <button class="action-btn update-btn">Update</button>
+                                <button class="action-btn delete-btn">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Russel Ibarra</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>10</td>
+                            <td>25</td>
+                            <td>Evacuation Center 3</td>
+                            <td class="action-buttons">
+                                <button class="action-btn view-btn">View</button>
+                                <button class="action-btn update-btn">Update</button>
+                                <button class="action-btn delete-btn">Delete</button>
+                            </td>
+                        </tr>
+                        <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="submit-report-container">
+                <button id="openModalBtn" class="submit-report-btn">Add Family Record</button>
+            </div>
+
+        </div>
+    </div>
+</div>

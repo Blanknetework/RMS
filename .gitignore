@@ -1,0 +1,15 @@
+# Visual Studio cache
+.vs/
+*.user
+*.suo
+
+# Build folders
+bin/
+obj/
+Debug/
+Release/
+
+# Other temporary files
+*.log
+*.tmp
+*.db
