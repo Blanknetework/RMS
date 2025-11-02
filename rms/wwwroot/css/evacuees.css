@@ -1,8 +1,12 @@
-﻿/* ============================
+﻿@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+
+/* ============================
    GLOBAL LAYOUT & BASE
 ============================ */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     height: 100%;
@@ -50,6 +54,44 @@ body {
 }
 
 /* ============================
+   GREEN NAVBAR (Horizontal)
+============================ */
+.top-navbar {
+    background-color: #A0C878;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+
+    .top-navbar ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        gap: 100px; /* spacing between menu items */
+    }
+    .top-navbar a {
+        display: inline-block;
+        padding: 12px 20px; /* reduced from 12px 20px */
+        color: #fff;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1.05em;
+        border-radius: 6px;
+        transition: background-color 0.2s ease, color 0.2s ease;
+    }
+
+        .top-navbar a:hover,
+        .top-navbar a.active {
+            background-color: rgba(255, 255, 255, 0.2);
+            color: #fff;
+        }
+
+
+
+
+
+/* ============================
    MAIN CONTENT LAYOUT
 ============================ */
 .main-content {
@@ -59,54 +101,6 @@ body {
     padding: 0;
 }
 
-/* ============================
-   SIDEBAR
-============================ */
-/* Sidebar styling */
-.sidebar {
-    background-color: #A0C878;
-    width: 270px;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 85px; /* distance from top header */
-    border-right: 1px solid #000000;
-}
-
-    /* Sidebar menu */
-    .sidebar ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        gap: 10px; /* spacing between menu items */
-    }
-
-.nav-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 70px;
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: 700;
-    font-size: 1.25em;
-    transition: background-color 0.2s, transform 0.2s;
-    border-radius: 4px;
-}
-
-    .nav-item:hover {
-        background-color: #b7dfa3;
-        transform: scale(1.02); /* subtle hover enlarge */
-    }
-    .nav-item.active {
-        background-color: #BCD9A0;
-        color: #ffffff;
-    }
 /* ============================
    REPORT SECTION
 ============================ */
@@ -153,7 +147,7 @@ body {
     color: #666666;
     font-size: 15px;
     transition: background-color 0.2s;
-}
+}   
 
     .search-button:hover {
         background-color: #f0f0f0;
