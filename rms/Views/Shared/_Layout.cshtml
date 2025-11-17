@@ -11,46 +11,78 @@
 <body>
     @RenderBody()
 
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js"></script>
-
     <div id="addFamilyModal" class="modal">
         <div class="modal-content">
             <span class="close-btn">&times;</span>
-            <h2>Add Family Record</h2>
-            <form>
-                <label>Head of Family Name</label>
-                <input type="text" placeholder="Enter name">
+            
+            <div class="modal-header">
+                <img src="~/imgs/LOGO (1).png" alt="Barangay Seal" class="modal-logo">
+                <div class="modal-header-text">
+                    <span class="modal-barangay-name">San Bartolome Barangay Hall</span>
+                    <span class="modal-risk-management">Risk Management</span>
+                </div>
+            </div>
 
-                <label>Address</label>
-                <input type="text" placeholder="Enter address">
+            <form id="familyForm">
+                <div id="errorMessage" class="error-message" style="display: none;"></div>
+                <div class="form-grid">
+                    <div class="form-left">
+                        <div class="form-group">
+                            <label>Head of Family Name</label>
+                            <input type="text" id="headOfFamily" placeholder="" required>
+                        </div>
 
-                <label>Contact Number</label>
-                <input type="text" placeholder="Enter contact number">
+                        <div class="form-group">
+                            <label>Address</label>
+                            <input type="text" id="address" placeholder="" required>
+                        </div>
 
-                <label>Disaster Type</label>
-                <input type="text" placeholder="Enter disaster type">
+                        <div class="form-group">
+                            <label>Contact Number</label>
+                            <input type="text" id="contactNumber" placeholder="" required>
+                        </div>
 
-                <label>Evacuation Center Assigned</label>
-                <input type="text" placeholder="Enter evacuation center">
+                        <div class="form-group">
+                            <label>Disaster Type</label>
+                            <input type="text" id="disasterType" placeholder="" required>
+                        </div>
 
-                <label>Total Family Members</label>
-                <input type="number" placeholder="Enter total">
+                        <div class="form-group">
+                            <label>Evacuation Center Assigned</label>
+                            <input type="text" id="evacuationCenter" placeholder="" required>
+                        </div>
+                    </div>
 
-                <label>No. of Senior Citizens</label>
-                <input type="number" placeholder="Enter count">
+                    <div class="form-right">
+                        <div class="form-group">
+                            <label>Total Family Numbers</label>
+                            <input type="number" id="totalFamilyNumbers" placeholder="" required>
+                        </div>
 
-                <label>No. of PWD</label>
-                <input type="number" placeholder="Enter count">
+                        <div class="form-group">
+                            <label>No. of Senior Citizens</label>
+                            <input type="number" id="seniorCitizens" placeholder="" required>
+                        </div>
 
-                <label>No. of Children</label>
-                <input type="number" placeholder="Enter count">
+                        <div class="form-group">
+                            <label>No. of PWD</label>
+                            <input type="number" id="pwd" placeholder="" required>
+                        </div>
 
-                <button type="submit" class="submit-btn">Save Record</button>
+                        <div class="form-group">
+                            <label>No. of Children</label>
+                            <input type="number" id="children" placeholder="" required>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="submit-btn">Submit</button>
             </form>
         </div>
     </div>
 
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js"></script>
 
 </body>
 </html>
